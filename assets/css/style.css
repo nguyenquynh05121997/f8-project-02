@@ -1,0 +1,262 @@
+
+.main-header {
+    padding-top: 24px;
+    background: #FFFCF4;
+    position: sticky;
+    /* position: relative; */
+    top: -24px;
+    z-index: 1;
+}
+
+.header {
+    position: -webkit-sticky;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFCF4;
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.header .logo {
+    width: 50%;
+}
+
+.header .menu {
+    flex: 1;
+}
+
+.header .menu .list-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .menu .list-items .item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+.header .menu .list-items .item a {
+    position: relative;
+}
+
+.header .menu .list-items .item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    width: 20%;
+    visibility: hidden;
+
+}
+
+@keyframes goTo {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 20%;
+    }
+    
+}
+
+.header .menu .list-items .item a:focus::after {
+    visibility: visible;
+    animation: goTo 1s linear;
+}
+
+
+.header .menu .list-items .item a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #5F5B53;
+}
+
+.header .menu .list-items .item a:focus {
+    font-weight: 600;
+    color: #171100;
+    /* transition: ease-out 0.3s; */
+}
+
+.header .button {
+    margin-left: 21px;
+    background: #171100;
+
+}
+
+.button a {
+    font-weight: 600;
+    font-size: 1.6rem;
+    /* identical to box height, or 175% */
+    color: #FFFFFF;
+}
+
+/* Hero */
+
+.main-hero {
+    background: #FFFCF4;
+}
+
+.hero {
+    padding: 52px 0;
+    display: flex;
+    align-items: center;
+    background: #FFFCF4;
+    /* flex-wrap: wrap; */
+}
+
+.hero .image {
+    position: relative;
+    flex: 1;
+}
+
+.hero .image img {
+    width: 86%;
+    height: 685px;
+    /* max-width: 100%; */
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero .image .cards {
+    position: absolute;
+    bottom: 48px;
+    right: 8px;
+    width: 270px;
+    height: 244px;
+    background: #fff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.hero .image .cards .course {
+    padding: 24px;
+}
+
+.hero .image .cards .course .card {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .image .cards .course .card:first-child {
+    margin-top: 0;
+}
+
+.hero .image .cards .course img {
+    width: 48px;
+    height: 48px;
+}
+
+.hero .image .cards .course .card .content {
+    margin-left: 16px;
+}
+
+.hero .image .cards .course .card .content .sub-title{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+
+.hero .image .cards .course .card .content .title{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+    
+}
+
+.hero .area-content {
+    display: flex;
+    flex: 1;
+}
+
+.hero .area-content .content {
+    width: 86%;
+    margin-right: 0;
+}
+
+.hero .area-content .content .title {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero .area-content .content .sub-title {
+    --line-clamp: 4;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+
+.hero .area-content .content .watch {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .area-content .content .watch .button {
+    min-width: 180px;
+    height: 64px;
+    background: #FFB900;
+    border-radius: 32px;
+}
+
+.hero .area-content .content .watch .icon {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .area-content .content .watch .icon .button {
+    margin-right: 14px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .area-content .content .watch .icon p {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.hero .area-content .content .trend {
+    margin-top: 48px;
+}
+
+.hero .area-content .content .trend .number {
+    margin-top: 8px;
+}
+
+.hero .area-content .content .trend span {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #5f5b5a;
+}
+
+.hero .area-content .content .trend strong {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
