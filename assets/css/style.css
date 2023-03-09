@@ -93,10 +93,9 @@
 
 }
 
-.button a {
+.header .button a {
     font-weight: 600;
     font-size: 1.6rem;
-    /* identical to box height, or 175% */
     color: #FFFFFF;
 }
 
@@ -216,6 +215,10 @@
     border-radius: 32px;
 }
 
+.hero .area-content .content .watch .button a {
+    
+}
+
 .hero .area-content .content .watch .icon {
     margin-left: 28px;
     display: flex;
@@ -332,7 +335,7 @@
 .course .list-cards::-webkit-scrollbar-thumb {
     border: 7px solid transparent;
     border-radius: 100px;
-    background-color: #FFB900;
+    background-color: #e9e9e9;
     background-clip: content-box;
   }
 .course .list-cards .card {
@@ -427,10 +430,7 @@
 }
 
 .course .list-cards .card .content .buy .button a {
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 1.86;
-    color: #FFFFFF;    
+    font-size: 1.4rem; 
 }
 
 /* Testimonial */
@@ -486,9 +486,7 @@
 
 
 .testimonial .content .person .dots .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+
     background: #634700;
 }
 
@@ -598,8 +596,309 @@
 }
 
 .feature .content .description .button a {
+
+}
+
+/* CTA */
+
+.cta {
+    margin-top: 200px;
+}
+
+.cta .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 440px;
+}
+
+.cta .content .description {
+    width: 50%;
+}
+
+.cta .content .description .title {
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em; 
+    color: #171100;   
+}
+
+.cta .content .description .sub-title {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53; 
+}
+
+.cta .content .description .button {
+    margin-top: 32px;
+    display: inline-flex;
+    min-width: 137px;
+    background: #FFB900; 
+    border-radius: 26px;
+}
+
+.cta .content .description .button a {
+    
+}
+
+.cta .content image {
+    width: 50%;
+    height: 100%;
+}
+
+.cta .content img {
+    float: right;
+    width: 80%;
+    height: 440px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Blog */
+
+.blog {
+    margin-top: 200px;
+    background: #FFFCF4;
+
+}
+
+.blog .content {
+    padding: 96px 0;
+}
+
+.blog .content .head {
+    margin: 0 auto;
+    width: 448px;
+    max-width: 100%;
+}
+
+.blog .content .head .title {
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #130606;
+}
+
+.blog .content .head .sub-title {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #696262;      
+}
+
+.blog .content .list-tasks {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;   
+    overflow: auto; 
+}
+.blog .content .list-tasks::-webkit-scrollbar-thumb {
+    border: 7px solid transparent;
+    border-radius: 100px;
+    background-color: #e9e9e9;
+    background-clip: content-box;
+  }
+
+.blog .content .list-tasks .task {
+    width: 370px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.blog .content .list-tasks .task:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.blog .content .list-tasks .task img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;  
+}
+
+.blog .content .list-tasks .task .content {
+    padding: 20px;
+}
+
+.blog .content .list-tasks .task .content .date p {
+
+    position: relative;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+
+.blog .content .list-tasks .task .content .date p::before {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFB900;
+}
+
+.blog .content .line {
+    margin-top: 12px;
+    width: 45%;
+    height: 1px;
+    background: #E2DFDA;
+    border-radius: 0.5px;
+}
+
+.blog .content .title {
+    --line-clamp: 2;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;  
+}
+
+.blog .content .button {
+    margin-top: 12px;
+    min-width: 118px;
+    background: #171100;
+    border-radius: 25px;
+}
+
+.blog .content .button:hover {
+    background: #FFB900;
+    transition: ease 0.5s;
+}
+
+.blog .content .button a {
+    font-size: 1.4rem;
+}
+
+.blog .content .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog .content .dot {
+    background: #5F5B53;
+}
+
+.blog .content .dot:nth-child(2) {
+    margin: 0 6px;
+    background: #FFB900;
+}
+
+/* Footer */
+
+/* ----similar----- */
+.footer .text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.footer h4 {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #FFFFFF;
 }
+
+.footer .line {
+    margin-top: 14px;
+    width: 130px;
+    height: 1px;
+    background: #59554B; 
+}
+
+/* ------------------- */
+
+.footer {
+    background: #2E2100;
+}
+
+.footer .content {
+    padding-top: 96px;
+    padding-bottom: 28px;
+}
+
+.footer .content .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .content .contact .logo {
+    width: 267px;
+}
+
+.footer .content .contact .sub-title {
+    margin-top: 18px;
+}
+
+.footer .content .contact .link {
+    margin-top: 18px;
+    display: flex;
+}
+
+.footer .content .contact .link a {
+    margin: 0 18px;
+}
+
+.footer .content .contact .link a:first-child {
+    margin-left: 0;
+}
+
+.footer .content .contact .link a:last-child {
+    margin-right: 0;
+}
+
+.footer .lists {
+    margin-top: 28px;
+}
+
+.footer .lists li {
+    margin-bottom: 12px;
+}
+
+.footer .lists li:last-child {
+    margin-bottom: 0;
+}
+
+.footer .address {
+    width: 231px;
+    max-width: 100%;
+}
+
+.footer .address span {
+    font-weight: 600;
+    color: #fff
+}
+
+.footer .content .line {
+    margin-top: 38px;
+    width: 100%;
+
+}
+
+.footer .content .copyright {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807D74;
+}
+
