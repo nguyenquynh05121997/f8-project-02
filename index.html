@@ -39,19 +39,20 @@
 <body>
     <!-- Header -->
     <div class="main-header">
-        <header class="header content">
+        <header class="header main-content">
             <div class="logo">
                 <a href="#">
                     <img src="./assets/image/Logo.svg" alt="Lesson.">
                 </a>
             </div>
-            <div class="menu">
+            <!-- Navbar -->
+            <nav class="menu">
                 <ul class="list-items">
-                    <li class="item">
+                    <li class="item active">
                         <a href="#">Home</a>
                     </li>
                     <li class="item">
-                        <a href="#course">Courses</a>
+                        <a href="#!">Courses</a>
                     </li>
                     <li class="item">
                         <a href="#testimonial">Pricing</a>
@@ -60,7 +61,8 @@
                         <a href="#features">Reviews</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            <!-- Action -->
             <div class="button">
                 <a href="#!">Sign up</a>
             </div>
@@ -71,7 +73,7 @@
     <main>
         <!-- Hero -->
         <div class="main-hero">
-            <div class="content hero">
+            <div class="main-content hero">
                 <div class="image">
                     <img src="./assets/image/header-img.jpeg" alt="Learn without limits and spread knowledge.">
                     <div class="cards">
@@ -108,14 +110,12 @@
                             <div class="button">
                                 <a href="#!">See Courses</a>
                             </div>
-                            <div class="icon">
-                                <div class="button">
+                                <button class="icon">
                                     <a href="">
                                         <img src="./assets/image/play.svg" alt="play-icon">
                                     </a>
-                                </div>
+                                </button>
                                 <p>Watch Video</p>
-                            </div>
                         </div>
             
                         <div class="trend">
@@ -131,7 +131,7 @@
         </div>
 
         <!-- Courses -->
-        <div class="course content">
+        <div class="course main-content">
             <div class="head">
                 <div class="text">
                     <h2 id="course" class="title">Our popular courses</h2>
@@ -281,7 +281,7 @@
 
         <!-- Testimonial-->
         <div id="testimonial" class="testimonial">
-            <div class="content">
+            <div class="main-content">
                 <div class="person">
                     <div class="avatar">
                         <img src="./assets/image/face-ui.jpg" alt="avatar">
@@ -289,7 +289,7 @@
                     <p class="name line-clamp">Peter Moor</p>
                     <p class="sub-title line-clamp">Student of Web Design</p>
                     <div class="dots">
-                        <div class="dot"></div>
+                        <div class="dot active"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
                     </div>
@@ -311,7 +311,7 @@
 
         <!-- Features -->
         <div class="feature">
-            <div class="content">
+            <div class="main-content">
                 <div class="image">
                     <img src="./assets/image/feature-img-01.jpeg" alt="Learner outcomes through our awesome platform">
                     <img src="./assets/image/feature-img-02.jpeg" alt="Learner outcomes through our awesome platform">
@@ -331,7 +331,7 @@
         <!-- CTA -->
 
         <div class="cta">
-            <div class="content">
+            <div class="main-content">
                 <div class="description">
                     <h2 class="title">Take the next step toward your personal and professional goals with Lesson.</h2>
                     <p class="sub-title">Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
@@ -348,7 +348,7 @@
         <!-- Blog -->
 
         <div class="blog">
-            <div class="content">
+            <div class="main-content">
                 <div class="head">
                     <h2 class="title">Our blog</h2>
                     <p class="sub-title">Read our regular travel blog and know the latest update of tour and travel</p>
@@ -361,7 +361,7 @@
                                 <p>21 November 2021</p>
                             </div>
                             <div class="line"></div>
-                            <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                            <h3 class="title line-clamp">How to become a pro web designer in 2022 and get remot job?</h3>
                             <div class="button">
                                 <a href="">Read More</a>
                             </div>
@@ -374,7 +374,7 @@
                                 <p>21 November 2021</p>
                             </div>
                             <div class="line"></div>
-                            <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                            <h3 class="title line-clamp">How to become a pro web designer in 2022 and get remot job?</h3>
                             <div class="button">
                                 <a href="">Read More</a>
                             </div>
@@ -434,7 +434,7 @@
                     </div>
                 </div>
                 <div class="dots">
-                    <div class="dot"></div>
+                    <div class="dot active"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
@@ -445,7 +445,7 @@
     <!-- Footer -->
 
     <footer class="footer">
-        <div class="content">
+        <div class="main-content">
             <div class="contact">
                 <div class="logo">
                     <img src="./assets/image/Logo-footer.svg" alt="Lesson.">
@@ -463,16 +463,16 @@
                     <div class="line"></div>
                     <ul class="lists">
                         <li>
-                            <a href="" class="text">About Us</a>
+                            <a href="#!" class="text">About Us</a>
                         </li>
                         <li>
-                            <a href="" class="text">Features</a>
+                            <a href="#!" class="text">Features</a>
                         </li>
                         <li>
-                            <a href="" class="text">Our Pricing</a>
+                            <a href="#!" class="text">Our Pricing</a>
                         </li>
                         <li>
-                            <a href="" class="text">Latest News</a>
+                            <a href="#!" class="text">Latest News</a>
                         </li>
                     </ul>
                 </div>
@@ -481,16 +481,16 @@
                     <div class="line"></div>
                     <ul class="lists">
                         <li>
-                            <a href="" class="text">FAQ’s</a>
+                            <a href="#!" class="text">FAQ’s</a>
                         </li>
                         <li>
-                            <a href="" class="text">Terms & Conditions</a>
+                            <a href="#!" class="text">Terms & Conditions</a>
                         </li>
                         <li>
-                            <a href="" class="text">Privacy Policy</a>
+                            <a href="#!" class="text">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="" class="text">LContact Us</a>
+                            <a href="#!" class="text">LContact Us</a>
                         </li>
                     </ul>
                 </div>
