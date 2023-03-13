@@ -1,7 +1,6 @@
-
 .main-header {
     padding-top: 24px;
-    background: #FFFCF4;
+    background: #fffcf4;
     position: sticky;
     /* position: relative; */
     top: -24px;
@@ -13,7 +12,7 @@
     padding: 12px 0;
     display: flex;
     align-items: center;
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .header .menu {
@@ -29,17 +28,17 @@
 }
 
 .header .menu .list-items .item a {
-    padding: 8px 21px
+    padding: 8px 21px;
 }
 
-.header .menu .list-items .item a:hover{
-    color:  #171100;    
+.header .menu .list-items .item a:hover {
+    color: #171100;
     text-shadow: 1px 0 0 currentColor;
 }
 
 .header .menu .list-items .item.active a:focus {
     text-shadow: 1px 0 0 currentColor;
-    color:  #171100;
+    color: #171100;
 }
 
 .header .menu .list-items .item.active a:focus::after {
@@ -65,21 +64,20 @@
 
 .header .button {
     margin-left: 59px;
-    background: #171100;
-
 }
 
 /* Hero */
 
 .main-hero {
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .hero {
-    padding: 52px 0;
+    padding: 52px 0 65px;
     display: flex;
     align-items: center;
-    background: #FFFCF4;
+    background: #fffcf4;
+    /* background: orange; */
 }
 
 .hero .image {
@@ -91,6 +89,8 @@
     width: 86%;
     height: 685px;
     border-radius: 20px;
+    /* vertical-align: bottom; */
+    display: block;
 }
 
 .hero .image .cards {
@@ -129,19 +129,18 @@
     margin-left: 16px;
 }
 
-.hero .image .cards .course .card .content .sub-title{
+.hero .image .cards .course .card .content .sub-title {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
-.hero .image .cards .course .card .content .title{
+.hero .image .cards .course .card .content .title {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
     color: #171100;
-    
 }
 
 .hero .area-content {
@@ -167,7 +166,7 @@
     margin-top: 22px;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .hero .area-content .content .watch {
@@ -179,12 +178,11 @@
 .hero .area-content .content .watch .button {
     min-width: 180px;
     height: 64px;
-    background: #FFB900;
     border-radius: 32px;
 }
 
 .hero .area-content .content .watch .icon {
-    border: none;
+    border: 1px solid #f4f4f4;
     margin-left: 28px;
     display: flex;
     justify-content: center;
@@ -193,6 +191,10 @@
     min-height: 40px;
     border-radius: 50%;
     background: #fff;
+}
+
+.hero .area-content .content .watch .icon:hover {
+    border: none;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
     cursor: pointer;
 }
@@ -218,7 +220,7 @@
 }
 
 .hero .area-content .content .trend strong {
-    font-family: 'Sen',sans-serif;
+    font-family: "Sen", sans-serif;
     font-weight: 700;
     font-size: 4.4rem;
     color: #171100;
@@ -251,26 +253,25 @@
 
 .course .head .sub-title {
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .course .head .icon .fa-solid {
     width: 40px;
     height: 40px;
-    border: 1px solid #FFB900;
+    border: 1px solid #ffb900;
     border-radius: 50%;
     font-size: 1.4rem;
     padding: 12px 16px;
-    color: #FFB900;
+    color: #ffb900;
     background-color: #fff;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
-.course .head .icon .fa-solid:hover{
-    background: #FFB900;
+.course .head .icon .fa-solid:hover {
+    background: #ffb900;
     color: #fff;
     transition: ease 0.5s;
 }
@@ -291,12 +292,12 @@
     border-radius: 100px;
     background-color: #e9e9e9;
     background-clip: content-box;
-  }
+}
 .course .list-cards .card {
     min-width: 370px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 12px;
-    border: 1px solid #E2DFDA;    
+    border: 1px solid #e2dfda;
     /* transition: ease 3s; */
 }
 
@@ -326,6 +327,7 @@
 
 .course .list-cards .card .content .head .title {
     --line-clamp: 1;
+    padding-right: 4px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -347,16 +349,15 @@
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #FEA31B;  
+    color: #fea31b;
 }
 
 .course .list-cards .card .content .sub-title {
     --line-clamp: 2;
     margin-top: 6px;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .course .list-cards .card .content .buy {
@@ -373,36 +374,43 @@
 }
 .course .list-cards .card .content .buy .button {
     min-width: 118px;
-    background: #171100;
-}
-
-.course .list-cards .card .content .buy .button:hover {
-    background: #FFB900;
-    transition: ease 0.5s;
 }
 
 .course .list-cards .card .content .buy .button a {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
 }
 
 /* Testimonial */
 
 .testimonial {
     margin-top: 200px;
-    background: #2E2100;
+    background: #2e2100;
 }
 
 .testimonial .main-content {
+}
+
+.testimonial .main-content .list-items {
+    display: flex;
+    /* transform: translateX(-100%);
+    transition: all linear 0.2s; */
+    overflow: hidden;
+    
+}
+
+.testimonial .main-content .list-items .item {
+    /* overflow: hidden; */
+    width: 100%;
     padding: 96px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-shrink: 0;
+    
 }
 
 .testimonial .main-content .person {
-    width: 195px;
-    max-width: 100%;
+    width: 33%;
 }
 
 .testimonial .main-content .person .avatar img {
@@ -415,20 +423,19 @@
 .testimonial .main-content .person .name {
     --line-clamp: 1;
     margin-top: 18px;
-    font-family: 'Sen',sans-serif;
+    font-family: "Sen", sans-serif;
     font-weight: 700;
     font-size: 2.7rem;
     line-height: 1.42;
-    color: #F7F7F7;
+    color: #f7f7f7;
 }
 
 .testimonial .main-content .person .sub-title {
     --line-clamp: 2;
     margin-top: 4px;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #BFBCB3;
+    color: #bfbcb3;
 }
 
 .testimonial .main-content .person .dots {
@@ -436,36 +443,26 @@
     display: flex;
 }
 
-
 .testimonial .main-content .person .dots .dot {
-
     background: #634700;
 }
 
-.testimonial .main-content .person .dots .dot.active{
-    background: #FFB900;
+.testimonial .main-content .person .dots .dot.active {
+    background: #ffb900;
 }
 
-
 .testimonial .description {
-    position: relative;
-    width: 770px;
-    max-width: 100%;
-    padding: 28px 0 0 30px;
+    width: 66%;
 }
 
 .testimonial .description .quotes img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 30px;
     height: 28px;
-
 }
 
 .testimonial .description .desc {
+    margin-left: 30px;
     width: 96%;
-    max-width: 100%;
 }
 
 .testimonial .description .desc .comment {
@@ -473,13 +470,13 @@
     font-style: italic;
     font-size: 2.6rem;
     line-height: 1.54;
-    color: #FFFFFF;   
+    color: #ffffff;
 }
 
 /* Features */
 
 .feature {
-    margin-top: 200px
+    margin-top: 200px;
 }
 
 .feature .main-content {
@@ -490,8 +487,8 @@
 }
 
 .feature .main-content .image {
-    height: 100%;
     position: relative;
+    height: 100%;
     width: 50%;
 }
 
@@ -505,7 +502,7 @@
 
 .feature .main-content .image img:first-child {
     bottom: 0;
-    left: 0
+    left: 0;
 }
 
 .feature .main-content .image img:last-child {
@@ -525,27 +522,20 @@
     font-size: 3.8rem;
     line-height: 1.26;
     letter-spacing: -0.02em;
-    color: #171100;    
+    color: #171100;
 }
 
 .feature .main-content .description .sub-title {
     --line-clamp: 3;
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
-.feature .main-content .description .button{
+.feature .main-content .description .button {
     margin-top: 32px;
     min-width: 137px;
-    background: #FFB900; 
-    border-radius: 26px;
-}
-
-.feature .main-content .description .button a {
-
 }
 
 /* CTA */
@@ -555,10 +545,10 @@
 }
 
 .cta .main-content {
+    min-height: 440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 440px;
 }
 
 .cta .main-content .description {
@@ -569,28 +559,20 @@
     font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
-    letter-spacing: -0.02em; 
-    color: #171100;   
+    letter-spacing: -0.02em;
+    color: #171100;
 }
 
 .cta .main-content .description .sub-title {
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #5F5B53; 
+    color: #5f5b53;
 }
 
 .cta .main-content .description .button {
     margin-top: 32px;
-    display: inline-flex;
     min-width: 137px;
-    background: #FFB900; 
-    border-radius: 26px;
-}
-
-.cta .main-content .description .button a {
-    
 }
 
 .cta .main-content image {
@@ -611,8 +593,7 @@
 
 .blog {
     margin-top: 200px;
-    background: #FFFCF4;
-
+    background: #fffcf4;
 }
 
 .blog .main-content {
@@ -636,25 +617,24 @@
 
 .blog .main-content .head .sub-title {
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     text-align: center;
-    color: #696262;      
+    color: #696262;
 }
 
 .blog .main-content .list-tasks {
     margin-top: 55px;
     display: flex;
-    gap: 30px;   
-    overflow: auto; 
+    gap: 30px;
+    overflow: auto;
 }
 .blog .main-content .list-tasks::-webkit-scrollbar-thumb {
     border: 7px solid transparent;
     border-radius: 100px;
     background-color: #e9e9e9;
     background-clip: content-box;
-  }
+}
 
 .blog .main-content .list-tasks .task {
     min-width: 370px;
@@ -670,7 +650,7 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 16px 16px 0px 0px;  
+    border-radius: 16px 16px 0px 0px;
 }
 
 .blog .main-content .list-tasks .task .content {
@@ -678,13 +658,11 @@
 }
 
 .blog .main-content .list-tasks .task .content .date p {
-
     position: relative;
     margin-left: 10px;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .blog .main-content .list-tasks .task .content .date p::before {
@@ -696,14 +674,14 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #FFB900;
+    background: #ffb900;
 }
 
 .blog .content.line {
     margin-top: 12px;
     width: 45%;
     height: 1px;
-    background: #E2DFDA;
+    background: #e2dfda;
     border-radius: 0.5px;
 }
 
@@ -713,19 +691,13 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #171100;  
+    color: #171100;
 }
 
 .blog .content .button {
     margin-top: 12px;
     min-width: 118px;
-    background: #171100;
     border-radius: 25px;
-}
-
-.blog .content .button:hover {
-    background: #FFB900;
-    transition: ease 0.5s;
 }
 
 .blog .content .button a {
@@ -739,41 +711,40 @@
 }
 
 .blog .main-content .dot {
-    background: #5F5B53;
+    background: #5f5b53;
 }
 
 .blog .main-content .dot.active {
-    background: #FFB900;
+    background: #ffb900;
 }
 
 /* Footer */
 
 /* ----similar----- */
 .footer .text {
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #BFBCB2;
+    color: #bfbcb2;
 }
 
 .footer h4 {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer .line {
     margin-top: 14px;
     width: 130px;
     height: 1px;
-    background: #59554B; 
+    background: #59554b;
 }
 
 /* ------------------- */
 
 .footer {
-    background: #2E2100;
+    background: #2e2100;
 }
 
 .footer .main-content {
@@ -803,7 +774,6 @@
 .footer .main-content .contact .link a {
     margin: 0 18px;
 }
-
 
 .footer .main-content .contact .link a:first-child {
     margin-left: 0;
@@ -836,21 +806,22 @@
 
 .footer .address span {
     font-weight: 600;
-    color: #fff
+    color: #fff;
 }
 
 .footer .main-content .line {
     margin-top: 38px;
-    width: 100%;
+    width: 130px;
+}
 
+.footer .main-content > .line {
+    width: 100%;
 }
 
 .footer .main-content .copyright {
     margin-top: 28px;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     text-align: center;
-    color: #807D74;
+    color: #807d74;
 }
-
